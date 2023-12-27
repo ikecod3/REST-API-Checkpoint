@@ -127,6 +127,6 @@ app.delete("/api/v1/users/:id", async (req, res) => {
   }
 });
 
-// Start the server on the specified port
+// Start the server on the environemt variable specified port or use default 3010.
 const port = process.env.PORT || 3010;
 app.listen(port, () => console.log(" 💨💨 Server is running on port 3010"));
